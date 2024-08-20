@@ -1,0 +1,782 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url(font/Poppins/Poppins-Light.eot);
+    src: url(font/Poppins/Poppins-Light.ttf) format("ttf"),
+         url(font/Poppins/Poppins-Light.woff) format("woff"),
+         url(font/Poppins/Poppins-Light.woff2) format("woff2");  
+}
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url(font/Poppins/Poppins-Regular.eot);
+    src: url(font/Poppins/Poppins-Regular.ttf) format("ttf"),
+         url(font/Poppins/Poppins-Regular.woff) format("woff"),
+         url(font/Poppins/Poppins-Regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url(font/Poppins/Poppins-Medium.eot);
+    src: url(font/Poppins/Poppins-Medium.ttf) format("ttf"),
+         url(font/Poppins/Poppins-Medium.woff) format("woff"),
+         url(font/Poppins/Poppins-Medium.woff2) format("woff2");     
+}
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: url(font/Poppins/Poppins-SemiBold.eot);
+    src: url(font/Poppins/Poppins-SemiBold.ttf) format("ttf"),
+         url(font/Poppins/Poppins-SemiBold.woff) format("woff"),
+         url(font/Poppins/Poppins-SemiBold.woff2) format("woff2");
+}
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: url(font/Poppins/Poppins-Bold.eot);
+    src: url(font/Poppins/Poppins-Bold.ttf) format("ttf"),
+         url(font/Poppins/Poppins-Bold.woff) format("woff"),
+         url(font/Poppins/Poppins-Bold.woff2) format("woff2");
+}
+/* hedear.................................................................*/
+.header{
+    width: 100%;
+    height: 81px;
+    background-color:#1e1d26;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 154px;
+    position: fixed;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right button{
+    width: 102px;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: white;
+    background-color: #20c05c;
+    border-radius: 8px;
+    
+}
+.header-right button:hover {
+    background-color: #22b65a;
+}
+.header-right menu{
+    margin-right: 18px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 200x;
+    font-family:Poppins ;
+    font-size: 14px;
+}
+.header-right menu a{
+    color: #c2bfd4;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 600;
+}
+.header-right menu a:hover{
+    color: white;
+}
+/* baner.................................................................*/
+.baner{
+    width: 100%;
+    height: 671px;
+    background-image: url(image/home_recipes2_slider_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 118px 134px;
+}
+.baner-data{
+   
+}
+.baner-data .welcom{
+    font-family:Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    color: #20c05c;
+    letter-spacing: 2px;
+}
+.baner-data h1{
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    margin-top: 15px;
+    line-height: 54px;
+}
+.baner-data p{
+    font-family:Poppins;
+    font-size: 15px;
+    margin-top: 24px;
+    line-height: 28px;
+}
+.baner-data .buttoncontainer{
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+}
+.baner-data .button{
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    height: 47px;
+    background-color: #20c05c;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.baner-data .button:hover{
+    background-color: #22b65a;
+}
+.baner-data .button2{
+    background-color: #f7f7f7;
+    width: 168px;
+}
+.baner-data .button2:hover{
+    background-color: #e4e4e4;
+}
+.baner-data .button-txt{
+    width: 70%;
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baner-data .button-svg{
+    background-color: #22b65a;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+/* blog.................................................................*/
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 20px 135px;
+    background-image: url(image/home_recipes2_sectionbg1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.blog-titr{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-titr-left{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #222223;
+    font-weight: 600;
+    width: 69%;
+}
+.blog-titr-right{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    width: 31%;
+    gap: 10px;
+    align-items: center;
+}
+.blog-titr-right p{
+    color: #242424;
+}
+.blog-titr-right img{
+    width: 14px;
+    height: 14px;
+}
+.blog-titr-right a{
+    color: #20c05c;
+    text-decoration: none;
+}
+.blog-titr-right a:hover{
+    color: #168641;
+    text-decoration: underline;
+}
+.blog-posts-container{
+    width: 100%;
+    padding: 54px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.post{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+}
+.post img{
+    width: 100%;
+    transition: transform .5s ease;
+}
+.post img:hover{
+    transform: scale(1.1);
+}
+.post .data{
+    display: flex;
+    align-items: center;
+    padding: 16px 0 0 24px;
+    gap: 8px;
+}
+.post .data img{
+    width: 14px;
+    height: 14px;
+}
+.post .data p{
+    font-family:Poppins;
+    color: #a8a8a8;
+    font-size: 15px;
+}
+.post .data span{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.4px;
+    text-underline-offset: 4px;
+}
+.post .recipecname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19.4px;
+    color: #222223;
+    font-weight:bold;
+    padding: 10px 16px 0 16px;
+}
+.post .recipesabstract{
+    font-family:Poppins;
+    font-size: 15px;
+    color: #242424;
+    padding: 16px 0 22px 16px;
+}
+.post .box{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f8f8f8;
+    padding: 0 20px;
+}
+.post .box .box-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.post .box .box-left img{
+    width: 14px;
+    height: 14px;
+}
+.post .box .box-left p{
+    color: #a8a8a8;
+    font-size: 15px;
+    font-family:Poppins ;
+}
+.post .box .box-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-left: 1px solid #c9c8c8;
+    padding-left: 10px;
+}
+.post .box .box-right img{
+    width: 14px;
+    height: 14px;
+}
+.post .box .box-right p{
+    color: #20c05c;
+    font-size: 15px;
+    font-family:Poppins ;
+    font-weight: 400;
+}
+.post .box .box-right p:hover{
+    color: #168641;
+    text-decoration: underline;
+}
+.otherrecipes{
+    width: 100%;
+    height: 360px;
+    background-color: blue;
+    margin-bottom: 120px;
+    margin-top: 6px;
+    background-image: url(image/home_recipes2_columnbg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 90px 75px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.otherrecipes p{
+    font-family:Poppins;
+    font-size: 15px;
+    color: #20c05c;
+    letter-spacing: 1px;
+}
+.otherrecipes h2{
+    font-family:Poppins;
+    font-size: 44px;
+    color: #ffff;
+}
+.otherrecipes .button{
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    height: 47px;
+    background-color: #20c05c;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.otherrecipes .button:hover{
+    background-color: #22b65a;
+}
+.otherrecipes .button-txt{
+    width: 70%;
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otherrecipes .button-svg{
+    background-color: #22b65a;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+/* about.................................................................*/
+.about{
+    width: 100%;
+    height: 1000px;
+    background-image: url(image/home_recipes2_sectionbg2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 135px 135px;
+}
+.about h6{
+    font-family:Poppins;
+    color: #20c05c;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.about h2{
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    color: white;
+}
+.about p{
+    margin-top: 32px;
+    font-family:Poppins;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+.about .buttoncontainer{
+    margin-top:40px;
+    display: flex;
+    gap: 10px;
+}
+.about .button{
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    height: 47px;
+    background-color: #20c05c;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.about .button:hover{
+    background-color: #22b65a;
+}
+.about .button2{
+    background-color: #f7f7f7;
+    width: 168px;
+}
+.about .button2:hover{
+    background-color: #e4e4e4;
+}
+.about .button-txt{
+    width: 70%;
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .button-svg{
+    background-color: #22b65a;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.about hr{
+    margin: 98px 0;
+    height:1px;
+    border: none;
+    background-color: rgb(92, 92, 92);
+}
+.about .item-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.about .item-container .item{
+    
+}
+.about .item-container .item h4{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   color: white;
+   margin-top: 20px;
+}
+.about .item-container .item p{
+   font-family: Poppins ;
+   font-size: 15px;
+   color: #b3b3b3;
+}
+/*Testimonials.................................................................*/
+.testimonials{
+    width: 100%;
+    height: 960px;
+    background-image: url(image/home_recipes2_sectionbg3.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-color: #f0eff4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.testimonials h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    color: #222223;
+    padding: 100px 0 30px 0;
+}
+.testimonials .profile{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-top: 28px;
+}
+.testimonials p{
+    margin-top: 22px;
+    width: 70%;
+    padding: 48px;
+    text-align: center;
+    font-family:Poppins;
+    font-size: 16px;
+    color: #444444;
+    background-color: #e8e8e8;
+    line-height: 30px;
+}
+.testimonials div{
+    padding: 10px 0;
+}
+.testimonials h5{
+    font-family:Poppins;
+    font-size: 15px;
+    color: #222223;
+    font-weight: 400;
+}
+.testimonials a{
+    display: flex;
+    gap: 14px;
+    padding-top: 20px;
+}
+/*footer.................................................................*/
+.footer{
+  background-color:#f7f7f7 ;
+}
+
+.footer .footer-top{
+   padding: 100px 160px; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer-top ul{
+   line-height: 34px;
+}
+.footer-top ul li::marker{
+    color: #20c05c;
+    
+}
+.footer-top ul li a{
+    font-family:Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    color: #242424;
+    text-decoration: none;
+}
+.footer-top ul li a:hover{
+    color: #20c05c;
+    text-decoration: underline;
+}
+.footer-top div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family:Poppins;
+    font-size: 15px;
+    color: #242424;
+
+}
+.footer-top div h4{
+    color: #222223;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footer hr{
+    height:1px;
+    border: none;
+    background-color: rgb(197, 195, 195);
+}
+.footer .footer-bottom{
+    padding: 28px 140px;
+    font-family:Poppins;
+    font-size: 15px;
+    color: #242424;
+}
+/* responsiv-tablet */
+
+@media screen and (max-width: 768px) {
+
+/* hedear.......*/
+
+.header{
+    width: 100%;
+    padding: 0 60px;
+}    
+.header-left img{
+   
+}
+
+.header-right button{
+    width: 88px;
+    height: 38px;
+    font-size: 10px;
+}
+.header-right menu{
+    margin-right: 2px;
+    font-size: 10px;
+}
+.header-right menu a{
+    color: #c2bfd4;
+    text-decoration: none;
+    padding: 0 12px;
+    font-weight: 600;
+}
+/* baner.......*/
+.baner{
+    width: 100%;
+    height: 634px;
+    padding: 84px 36px;
+}
+.baner-data .welcom{
+    font-weight: 600;
+    font-size: 12px;
+}
+.baner-data h1{
+    font-size: 37px;
+    margin-top: 15px;
+}
+.baner-data p{
+    font-size: 13px;
+    margin-top: 24px;
+}
+.baner-data .buttoncontainer{
+    margin-top: 36px;
+}
+.baner-data .button{
+    width: 133px;
+    height: 43px;
+}
+.baner-data .button2{
+    width: 153px;
+}
+.baner-data .button-txt{
+    font-size: 13px;
+}
+/* blog...........*/
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+}
+.blog-titr-left{
+    font-size: 26px;
+}
+.blog-titr-right{
+    font-size: 13px;
+    width: 44%;
+}
+.blog-titr-right img{
+    width: 10px;
+    height: 10px;
+}
+.blog-posts-container{
+    width: 100%;
+    padding: 54px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.post .data img{
+    width: 10px;
+    height: 10px;
+}
+.post .data p{
+    font-size: 10px;
+}
+.post .recipecname{
+    font-size: 16px;
+    padding: 18px 16px 0 16px;
+}
+.post .recipesabstract{
+    font-size: 13px;
+    padding: 16px 16px 22px 16px;
+}
+.post .box .box-left img{
+    width: 10px;
+    height: 10px;
+}
+.post .box .box-left p{
+    font-size: 13px;
+}
+.post .box .box-right img{
+    width: 10px;
+    height: 10px;
+}
+.post .box .box-right p{
+    font-size: 13px;
+}
+.otherrecipes{
+    height: 320px;
+    padding: 60px 75px;
+}
+.otherrecipes p{
+    font-size: 13px;
+}
+.otherrecipes h2{
+    font-size: 37px;
+}
+.otherrecipes .button-txt{
+    font-size: 13px;
+}
+/* about.................................................................*/
+.about{
+    width: 100%;
+    height: 1000px;
+    padding: 135px 48px;
+}
+.about h6{
+    font-size: 13px;
+}
+.about h2{
+    font-size: 37px;
+}
+.about p{
+    font-size: 13px;
+    padding-right: 280px;
+}
+.about p br{
+    display: none;
+}
+.about .button{
+    width: 146px;
+    height: 43px;
+}
+.about .button2{
+    width: 153px;
+}
+.about .button-txt{
+    font-size: 13px;
+}
+.about .item-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 88px;
+}
+.about .item-container .item{
+    width: 33.3%;
+}
+.about .item-container .item h4{
+   font-size: 17px;
+   margin-top: 0;
+}
+.about .item-container .item p{
+   font-size: 13px;
+}
+/*Testimonials...........*/
+.testimonials h2{
+    width: 100%;
+    font-size: 37px;
+    padding: 100px 0 30px 0;
+}
+.testimonials p{
+    padding: 48px;
+    font-size: 14px;
+}
+.testimonials h5{
+    font-size: 13px;
+}
+/*footer..............*/
+.footer{
+    width: 100%;
+}
+.footer .footer-top{
+    padding: 50px 80px; 
+}
+  .footer-top ul li a{
+      font-size: 13px;
+  }
+  .footer-top div{
+      gap: 10px;
+      font-size: 13px;
+  }
+  .footer-top div h4{
+      font-size: 17px;
+  }
+  .footer .footer-bottom{
+      font-size: 13px;
+  }
+}
